@@ -24,7 +24,15 @@
     "test": "vitest run",
     "test:watch": "vitest",
     "test:coverage": "vitest run --coverage",
-    "test:examples": "bash ./scripts/run-example-checks.sh"
+    "test:examples": "bash ./scripts/run-example-checks.sh",
+    "prepare": "husky"
+  },
+  "lint-staged": {
+    "*.{js,ts,mjs,cjs}": [
+      "eslint --max-warnings=0",
+      "prettier --check"
+    ],
+    "*.{json,md,yml,sh}": []
   },
   "keywords": [
     "prettier",
@@ -43,6 +51,8 @@
     "@vitest/coverage-v8": "^4.1.0",
     "eslint": "^10.5.0",
     "eslint-config-prettier": "^10.1.8",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.4.0",
     "peggy": "^4.0.0",
     "prettier": "^3.0.0",
     "typescript": "^6.0.0",
