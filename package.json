@@ -1,6 +1,6 @@
 {
   "name": "prettier-plugin-sieve",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Prettier plugin for Sieve email filtering scripts (RFC 5228)",
   "type": "module",
   "main": "dist/index.js",
