@@ -41,7 +41,7 @@ jobs:
         run: npm test
 
       - name: Test Examples
-        run: npm test:examples
+        run: npm run test:examples
 
       - name: Publish to npm
         run: npm publish --access public --provenance
